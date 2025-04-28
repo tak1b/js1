@@ -6,7 +6,6 @@ import HomePage from './Layouts/HomePage';
 import BooksPage from './Layouts/BooksPage';
 import GenresPage from './Layouts/GenresPage';
 import BookDetails from './Layouts/BookDetails';
-import UserPage from './Layouts/UserPage';
 import UserReviews from './Layouts/UserReviews'
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path="books/:id" element={<BookDetails />} />
           <Route path="genres" element={<GenresPage />} />
           <Route path="reviews" element={<UserReviews />} />
-          <Route path="user/:id" element={<UserPage />} />
           <Route path="*" element={<FourOhFour />} />
         </Route>
       </Routes>
